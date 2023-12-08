@@ -1,0 +1,210 @@
+/* define the background color of the body */
+body {
+    /* background-color: #100E17; */
+    color: white !important;
+    margin: 0;
+    font-family: 'Consolas', Courier, monospace !important;
+}
+
+/* grid container with 5 rows and 100 view height for each section*/
+.grid-container {
+    display: grid;
+    /* grid-template-rows: 100vh 100vh fit-content 100vh 100vh; repeat(5, 100vh) */
+}
+
+
+
+/*  background color of sections - i decided to only use two colors 
+    section-bg-one means the first option 
+    section-bg-two means the second option
+*/
+.section-bg-one {
+    background-color: #100E17;
+}
+
+.section-bg-two {
+    background-color: #191526;
+}
+
+/* css for hero section */
+#hero-section {
+    display: flex;
+    height: 100vh;
+    position: relative;
+
+    /* Media query for smaller screens */
+    @media (max-width: 768px) {
+        text-align: center;; /* Change to a single column for smaller screens */
+    }
+}
+
+#call-to-action {
+    position: absolute;
+    bottom: 0;
+    /* left: 50%; Adjust as needed to horizontally center the element */
+    transform: translateX(-50%); /* Center the element horizontally */
+    display: inline-block; /* Ensures text remains centered */
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+/* this will center the content on the hero section */
+.section-center {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.glow-text {
+    color: #5918DF;
+    text-shadow: 0 0 5px #5918DF; /* Adjust the shadow color and size for a subtle glow effect */
+    animation: glow 2s infinite ease-in-out; /* Create an animation for the glow effect */
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #5918DF;
+    }
+    50% {
+        text-shadow: 0 0 8px #5918DF; /* Adjust the shadow size at mid-animation */
+    }
+    100% {
+        text-shadow: 0 0 5px #5918DF;
+    }
+}
+
+/* css for the about section */
+#about-section {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr minmax(min-content, max-content); /* Two equal-width columns */
+    gap: 20px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    grid-auto-flow: row;
+    overflow: hidden;
+
+    /* Media query for smaller screens */
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr; /* Change to a single column for smaller screens */
+        gap: 10px; /* Adjust gap for smaller screens */
+        grid-auto-rows: minmax(auto, 1fr); /* Adjust row sizing to prevent overflow */
+        margin: 0;
+    }
+}
+
+#about-section img {
+    height: 70%; /* Set the height as a percentage of the container height */
+    max-height: 500px;
+    border-radius: 100%;
+    border-radius: 50%; /* Set border-radius to 50% for a circular image */
+    display: block; /* Ensures the image is a block element */
+    margin: 0 auto; /* Centers the image horizontally */
+    filter: drop-shadow(0 0 2px rgba(89, 24, 223, 1));
+    will-change: transform;
+    transition: transform 0.3s ease; /* Adding transition for smooth animation */
+}
+
+#about-section img:hover {
+    transform: perspective(1000px) rotateY(10deg) scale(1.1); /* Adjust values for the desired 3D tilt */
+}
+
+#typingRole::after {
+    content: '|';
+    animation: blinkCursor 0.7s infinite;
+  }
+
+@keyframes blinkCursor {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+}
+  
+
+/* css for course and certification section */
+.course-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px; /* Increase the padding to accommodate the icon */
+}
+
+.course-icon {
+    position: absolute;
+    top: -10px; /* Adjust the top position to overlap slightly */
+    right: -10px; /* Adjust the right position to overlap slightly */
+    height: 60px;
+    width: 60px;
+    z-index: 1; /* Ensure the icon appears above the card content */
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+}
+  
+#course-section .card {
+    filter: drop-shadow(0 0 5px rgba(89, 24, 223, 1));
+    transition: transform 0.3s ease; /* Adding transition for smooth animation */
+    will-change: transform;
+}
+
+#course-section .card:hover {
+    transform: perspective(1000px) rotateY(15deg) scale(1.1);
+}
+
+#course-section {
+    height: fit-content;
+}
+
+/* css for the project section */
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value to control opacity */
+}
+
+#project-section .card {
+    filter: drop-shadow(0 0 5px rgba(89, 24, 223, 1));
+    transition: transform 0.3s ease; /* Adding transition for smooth animation */
+    will-change: transform;
+}
+
+/* CSS for the card image */
+.card-img-top {
+    width: 100%; /* Ensure the image takes the full width of the card */
+    height: 200px; /* Set a fixed height or adjust as needed */
+    object-fit: cover; /* Ensure the image covers the entire space without distortion */
+}
+  
+#project-section {
+    /* height: fit-content; */
+    height: fit-content;
+    /* overflow: auto; */
+    /* display: flex; */
+    /* gap: 3rem;
+    grid-template-columns: 1fr 1fr 1.5fr;
+    grid-template-rows: 1fr 1fr; */
+}
+
+/* css for footer section */
+#footer-section {
+    height: 100vh;
+}
+
+  
