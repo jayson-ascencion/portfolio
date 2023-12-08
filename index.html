@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- <style>
+      /* Adjust the modal backdrop with a blur effect */
+      .modal-backdrop {
+        backdrop-filter: blur(5px); /* Change the blur radius as needed */
+      }
+    </style> -->
+    <title>Document</title>
+</head>
+<body class="grid-container">
+    <!-- <section class="section-bg-one section-center">
+        <h1> Hello, I'm <strong style="color: #5918DF;"> Jayson</strong>. Nice to meet you!</h1>
+        <p class=""> Aspiring Software Engineer /> Software Quality Assurance</p>
+
+        <div>
+            Get to know me better
+            <div class="text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"/>
+                </svg>
+            </div>
+        </div>
+    </section> -->
+
+    
+    <section id="hero-section" class="section-bg-one section-center ">
+        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <h1> Hello, I'm <strong style="color: #5918DF;" class="glow-text"> Jayson</strong>. Nice to meet you!</h1>
+            <p> Aspiring <span id="role" style="color: #5918DF;" ></span></p>
+        </div>
+
+        <div id="call-to-action" style="text-align: center; margin-bottom: 10px;">
+            Get to know me better
+            <div class="text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="about-section" class="section-bg-two p-5 ">
+        <div class="m-auto p-auto w-100">
+            <h2 style="color: #5918DF;" class="glow-text">Jayson Ascencion</h2>
+            <p>Aspiring Software Engineer /> Software Quality Assurance </p>
+            <p id="typingRole" class="typing-container"></p>
+        </div>
+        
+        <img src="./assets/images/jayson.png" alt="Jayson" class="float-end align-items-center align-content-center justify-content-center">
+    </section>
+
+    <section id="course-section" class="section-bg-one p-5 ">
+      <div class="">
+
+        <h2> <strong>Courses and Certifications</strong> </h2>
+
+        <div class="row row-cols-1 row-cols-md-4 g-4 mt-3 justify-content-between align-content-center align-items-center">
+
+          <div class="col">
+            <div class="card course-card">
+              <!-- <img src="..." class="card-img-top" alt="..."> -->
+              <div class="card-body justify-content-between">
+                <h5 class="card-title">Agile with Atlassian JIRA</h5>
+                <a href="https://www.coursera.org/account/accomplishments/verify/F95UABA7BZD7" style="color: #5918DF;" class="text-decoration-none fw-bold" target="_blank"> View Certificate <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                </svg> </a>
+                <!-- <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#jira">
+                  View More
+                </button> -->
+              </div>
+              <img src="./assets/images/coursera.png" alt="" class="course-icon">
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card course-card">
+              <!-- <img src="..." class="card-img-top" alt="..."> -->
+              <div class="card-body">
+                <h5 class="card-title">Software Testing Bootcamp</h5>
+                <a href="https://www.udemy.com/certificate/UC-4dd555cf-88be-4351-8033-33d382c3d612/" style="color: #5918DF;" class="text-decoration-none fw-bold" target="_blank"> View Certificate <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                </svg></a>
+                <!-- <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#testing">
+                  View More
+                </button>-->
+              </div> 
+              <img src="./assets/images/udemy.png" alt="" class="course-icon">
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card course-card">
+              <!-- <img src="..." class="card-img-top" alt="..."> -->
+              <div class="card-body justify-content-around">
+                <h5 class="card-title">Live Manual Testing Practice</h5>
+                <!-- <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#live">
+                  View More
+                </button> -->
+                <a href="" style="color: #404040;" class="text-decoration-none fw-bold" target="_blank"> No Certificate Available</a>
+              </div>
+              <img src="./assets/images/guru99.png" alt="" class="course-icon">
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card course-card">
+              <!-- <img src="..." class="card-img-top" alt="..."> -->
+              <div class="card-body">
+                <h5 class="card-title">Web Development Bootcamp</h5>
+                <!-- <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#webdev">
+                  View More
+                </button> -->
+                <a href="#" style="color: #5918DF;" class="text-decoration-none fw-bold" target="_blank"> View Certificate <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                </svg></a>
+              </div>
+              <img src="./assets/images/udemy.png" alt="" class="course-icon">
+              <!-- <img src="./assets/images/udemy.png" alt="" class="course-icon"> -->
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>  
+
+    <section id="project-section" class="section-bg-one p-5 ">
+        <!-- <div class=""> -->
+            <h2> <strong>Personal Project</strong> </h2>
+
+            <div class="d-flex flex-column flex-md-row gap-5 mt-5">
+
+              <!-- <div class=""> -->
+                <!-- <div class="card">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Arlin's Farmville</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                </div> -->
+
+                <div class="card tilt">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Arlin's Farmville</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#jira">
+                      View More
+                    </button>
+                  </div>
+                </div>
+
+              <!-- </div> -->
+
+              <div class="">
+                <div class="card tilt">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Registrar Record System</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#live">
+                      View More
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="">
+                <div class="card tilt">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Youtube Select</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#live">
+                      View More
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="jira" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <!-- Additional custom backdrop -->
+    <!-- <div class="modal-backdrop bg-dark"></div> -->
+              <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5 text-black" id="exampleModalLabel"> Arlin's Farmville</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                      <div class="carousel-inner align-content-center align-items-center justify-content-center">
+                        <div class="carousel-item active">
+                          <img src="./assets/images/coursera.png" class="d-block w-50 h-50" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./assets/images/guru99.png" class="d-block w-50 h-50" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./assets/images/udemy.png" class="d-block w-50 h-50" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                    <div>
+                      <div class="text-dark">link here bby</div>
+                      <div class="d-flex flex-column flex-md-row gap-5">
+                        <div class="bg-dark w-100"><strong>About</strong></div>
+                        <div class="bg-warning w-100"><strong>Technologies Used</strong></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">View Certificate</button>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            
+            <div class="modal fade" id="testing" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="modal fade" id="webdev" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="modal fade" id="live" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        <!-- </div> -->
+       
+    </section>
+
+    <section id="footer-section" class="section-bg-two ">  
+        footer or contact me section
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script>
+
+      // script for the animation of role software engineer - sqa
+      const roleElement = document.getElementById('role');
+      const phrases = [
+        "Software Engineer",
+        "Software Quality Assurance"
+      ];
+
+      const randomChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+-=[]{}|;:,.<>?';
+
+      const totalCharacters = 50; // Total number of characters in the transition
+      const transitionTime = 1000; // Slower transition to exact word (milliseconds)
+      const randomTime = transitionTime / totalCharacters; // Time for each character transition
+      const delayBeforeNextPhrase = 1000; // Delay before changing to the next word (milliseconds)
+
+      let currentPhraseIndex = 0;
+      let isTransitioning = true;
+      let charIndex = 0;
+      let timeout;
+
+      function startTransition() {
+        if (isTransitioning) {
+          if (charIndex < totalCharacters) {
+            const currentPhrase = phrases[currentPhraseIndex];
+            let displayText = '';
+
+            for (let i = 0; i < currentPhrase.length; i++) {
+              if (i <= charIndex) {
+                displayText += currentPhrase[i];
+              } else {
+                displayText += getRandomChar();
+              }
+            }
+
+            roleElement.textContent = displayText;
+            charIndex++;
+            timeout = setTimeout(startTransition, randomTime);
+          } else {
+            charIndex = 0;
+            isTransitioning = false;
+            timeout = setTimeout(startTransition, transitionTime); // Delay before transitioning to the next phrase
+          }
+        } else {
+          currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
+          isTransitioning = true;
+          timeout = setTimeout(startTransition, randomTime);
+        }
+      }
+
+      function getRandomChar() {
+        return randomChars.charAt(Math.floor(Math.random() * randomChars.length));
+      }
+
+      // Start the transition
+      startTransition();
+
+      const typingRoleElement = document.getElementById('typingRole');
+      const textToType = "As a recent graduate with foundational knowledge in programming and software development, I am enthusiastic about applying my skills, collaborating within dynamic teams, and contributing to projects. I am committed to advancing my professional growth through hands-on experience and continuous learning.";
+
+      let letIndex = 0;
+      const typingSpeed = 25; // Adjust typing speed
+
+      function typeText() {
+        if (letIndex < textToType.length) {
+          typingRoleElement.textContent += textToType.charAt(letIndex);
+          letIndex++;
+          setTimeout(typeText, typingSpeed);
+        }
+      }
+
+      // Check if the user is on the "About" section before starting the typing animation
+      const aboutSection = document.getElementById('about-section');
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            // Start the typing animation when the "About" section is in view
+            typeText();
+            observer.disconnect(); // Stop observing once the animation starts
+          }
+        });
+      }, { threshold: 0.5 }); // Adjust threshold as needed
+
+      // Start observing the "About" section
+      observer.observe(aboutSection);
+
+
+      // const typingRoleElement = document.getElementById('typingRole');
+      // const textToType = "As a recent graduate with foundational knowledge in programming and software development, I am enthusiastic about applying my skills, collaborating within dynamic teams, and contributing to projects. I am committed to advancing my professional growth through hands-on experience and continuous learning.";
+
+      // let letIndex = 0;
+      // const typingSpeed = 25; // Adjust typing speed
+
+      // function typeText() {
+      //   if (letIndex < textToType.length) {
+      //     typingRoleElement.textContent += textToType.charAt(letIndex);
+      //     letIndex++;
+      //     setTimeout(typeText, typingSpeed);
+      //   }
+      // }
+
+      // // Start the typing animation
+      // typeText();
+
+      // script for the call to action get to know me better
+      document.getElementById('call-to-action').addEventListener('click', function() {
+        // Scroll to the next section (replace 'next-section' with the actual ID of the next section)
+        document.getElementById('about-section').scrollIntoView({ behavior: 'smooth' });
+
+        // Hide the call-to-action after clicking
+        this.classList.add('clicked');
+      });
+
+      const tiltCards = document.querySelectorAll('.tilt');
+
+tiltCards.forEach((card) => {
+  card.addEventListener('mousemove', (e) => {
+    const tiltAmount = (window.innerWidth / 2 - e.pageX) / 50;
+    const additionalTransform = `scale(1.1)`;
+
+    card.style.transform = `rotateY(${tiltAmount}deg) ${additionalTransform}`;
+  });
+
+  card.addEventListener('mouseleave', () => {
+    card.style.transform = 'rotateY(0deg) perspective(1000px) scale(1)';
+  });
+});
+
+
+
+    </script>
+  </body>
+</html>
