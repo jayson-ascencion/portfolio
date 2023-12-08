@@ -161,12 +161,12 @@ body {
 }
   
 #course-section .card {
-    filter: drop-shadow(0 0 5px rgba(89, 24, 223, 1));
     transition: transform 0.3s ease; /* Adding transition for smooth animation */
     will-change: transform;
 }
 
 #course-section .card:hover {
+    filter: drop-shadow(0 0 5px rgba(89, 24, 223, 1));
     transform: perspective(1000px) rotateY(15deg) scale(1.1);
 }
 
